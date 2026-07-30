@@ -30,6 +30,10 @@ Just open `index.html` in any modern browser. It is fully self contained and wor
 
 Nothing you type ever leaves your machine. There is no network request, no analytics, and no storage. All hashing and verification happen locally in the page. This is a learning tool, but the cryptography itself is real and standards-correct.
 
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
+
 ## License
 
 MIT. Copyright 0xelitesystem 2026.
