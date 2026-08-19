@@ -681,8 +681,8 @@
     setTimeout(function () {
       try {
         var ok = bcrypt.verify(vpw.value, h);
-        if (ok) { verdict.className = "verdict match"; verdict.textContent = "MATCH ✓  the password produces this hash."; }
-        else { verdict.className = "verdict nomatch"; verdict.textContent = "NO MATCH ✗  the password does not produce this hash."; }
+        if (ok) { verdict.className = "verdict match"; verdict.textContent = "MATCH &#10003;  the password produces this hash."; }
+        else { verdict.className = "verdict nomatch"; verdict.textContent = "NO MATCH &#10007;  the password does not produce this hash."; }
       } catch (e) {
         verdict.className = "verdict nomatch";
         verdict.textContent = "Could not verify: " + e.message;
