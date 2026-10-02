@@ -2,9 +2,17 @@
 
 An educational, fully client-side bcrypt playground. Generate and verify bcrypt hashes, inspect the anatomy of a hash string, and learn why bcrypt is the right tool for password storage. Everything runs in your browser with no external dependencies.
 
-## Live demo
+**Live demo:** https://0xelitesystem.github.io/bcrypt-playground/
 
-https://0xelitesystem.github.io/bcrypt-playground/
+## Use
+
+1. Type a password, set the Cost factor (4 to 15) and pick `$2a$` or `$2b$`.
+2. Click Generate hash and read the hash anatomy: prefix, cost, salt and digest.
+3. To check a password, paste a bcrypt hash and the password to test, then click Verify for MATCH or NO MATCH.
+
+## Why this exists
+
+bcrypt is easier to trust once you have taken a hash apart. This page implements bcrypt from scratch so you can generate, verify and dissect hashes without sending a password to a server. It is one HTML file with no tracking, MIT licensed.
 
 ## Features
 
@@ -29,6 +37,19 @@ Just open `index.html` in any modern browser. It is fully self contained and wor
 ## Privacy
 
 Nothing you type ever leaves your machine. There is no network request, no analytics, and no storage. All hashing and verification happen locally in the page. This is a learning tool, but the cryptography itself is real and standards-correct.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/bcrypt-playground
+cd bcrypt-playground
+```
+
+Open `index.html` in any modern browser, or serve the folder with `python -m http.server 8000` and visit http://localhost:8000/.
+
+## Build
+
+No build step. The whole tool is one `index.html` file with inline CSS and JavaScript.
 
 ## More
 
